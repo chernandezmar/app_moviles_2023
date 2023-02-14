@@ -16,11 +16,11 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(Icons.accessible_forward, size: 100, color: Colors.red),
+              Icon(Icons.accessible_forward, size: 100, color: Colors.indigoAccent),
               Text(
-                'Avanzando Rapido',
+                'Rapido!!!!',
                 style: TextStyle(
-                  color: Colors.orange,
+                  color: Colors.amber,
                   fontSize: 54,
                   fontWeight: FontWeight.bold,
                 ),
