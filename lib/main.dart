@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
           title: Text('Mi aplicación - barra navegacion'),
         ),
         body: Center(
-          child: Text('¡Hola, mundo!'),
+          child: Text('¡Hola, chicos de app moviles!'),
         ),
       ),
     );
