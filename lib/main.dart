@@ -11,10 +11,20 @@ class MyApp extends StatelessWidget {
       title: 'Mi aplicación',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Mi aplicación - barra navegacion'),
+          title: Text(
+              'Mi aplicación - barra navegacion',
+              style: TextStyle(
+                color: Colors.black,
+              ),
+          ),
         ),
         body: Center(
-          child: Text('¡Hola, chicos de app moviles!'),
+          child: Text(
+              '¡Hola, chicos de app moviles!',
+            style: TextStyle(
+              color: Colors.purple,
+            ),
+          ),
         ),
       ),
     );
