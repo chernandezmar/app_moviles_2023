@@ -4,9 +4,11 @@ class Descripcion_lugar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+    String texto ="Lorem ipsum dolor sit amet. Eum tempore culpa aut unde iure aut veritatis quis a illum impedit ut omnis voluptas! Ut saepe voluptatem vel molestias nisi ut rerum odio ut veniam porro At blanditiis molestiae! Qui quos iure sit consectetur doloribus et iure corrupti qui incidunt tempore. Aut facere nesciunt sit cupiditate vero et molestiae dolorum. Aut excepturi autem aut quidem necessitatibus in dolor vero At minus officia sed perferendis minima ea fugit optio.";
+
     final estrella = Container (
       margin: EdgeInsets.only(
-        top: 323.0,
+        top: 123.0,
         right: 3.0
       ),
       child: Icon(
@@ -16,7 +18,7 @@ class Descripcion_lugar extends StatelessWidget {
     );
     final estrella_mitad = Container (
         margin: EdgeInsets.only(
-            top: 323.0,
+            top: 123.0,
             right: 3.0
         ),
         child: Icon(
@@ -29,7 +31,7 @@ class Descripcion_lugar extends StatelessWidget {
       children: [
         Container (
           margin: EdgeInsets.only(
-            top: 320.0,
+            top: 120.0,
             left:20.0,
             right:20.0
           ),
@@ -50,11 +52,32 @@ class Descripcion_lugar extends StatelessWidget {
             estrella,
             estrella_mitad
           ],
-        )
+        ),
       ],
     );
 
-    return titulo_estrellado;
+    final descripcion = Container(
+      margin: new EdgeInsets.only(
+        top: 20.0,
+        left:20.0,
+        right:20.0
+      ),
+      child: Text(
+        texto,
+        style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.w100,
+            color: Color(0xFF56575a)
+        ),
+      ),
+    );
+
+    return Column(
+      children: [
+        titulo_estrellado,
+        descripcion
+      ],
+    );
   }
   
 }
