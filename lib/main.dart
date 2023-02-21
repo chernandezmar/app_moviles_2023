@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'descripcion_lugar.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,22 +13,7 @@ class MyApp extends StatelessWidget {
         /*appBar: AppBar(
           title: Text('Esta es la AppBar aqui'),
         ),*/
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.accessible_forward, size: 100, color: Colors.red),
-              Text(
-                'Avanzando Rapido',
-                style: TextStyle(
-                  color: Colors.orange,
-                  fontSize: 54,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
-          ),
-        ),
+        body: new Descripcion_lugar(),
       ),
     );
   }
