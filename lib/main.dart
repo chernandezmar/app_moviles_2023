@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'descripcion_lugar.dart';
+import 'reviews_info.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +14,12 @@ class MyApp extends StatelessWidget {
         /*appBar: AppBar(
           title: Text('Esta es la AppBar aqui'),
         ),*/
-        body: new Descripcion_lugar(),
+        body: Column(
+          children: [
+            Descripcion_lugar(),
+            reviews_info(),
+          ],
+        )
       ),
     );
   }
