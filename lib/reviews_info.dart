@@ -26,7 +26,7 @@ class reviews_info extends StatelessWidget {
         "Varuna Yasas",
         textAlign: TextAlign.left,
         style: TextStyle(
-          fontFamily: "TiltNeon",
+          fontFamily: "Kaushan",
           fontSize: 17,
         )
       )

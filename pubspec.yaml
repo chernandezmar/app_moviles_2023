@@ -97,3 +97,18 @@ flutter:
     - family: TiltNeon
       fonts:
         - asset: fonts/TiltNeon.ttf
+    - family: DancingScript
+      fonts:
+        - asset: fonts/DancingScript-VariableFont_wght.ttf
+    - family: Kaushan
+      fonts:
+        - asset: fonts/KaushanScript-Regular.ttf
+    - family: Mynerve
+      fonts:
+        - asset: fonts/Mynerve-Regular.ttf
+    - family: Righteotus
+      fonts:
+        - asset: fonts/Righteous-Regular.ttf
+    - family: Sacramento
+      fonts:
+        - asset: fonts/Sacramento-Regular.ttf
