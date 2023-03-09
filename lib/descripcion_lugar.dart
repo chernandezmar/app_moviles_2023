@@ -18,7 +18,7 @@ class Descripcion_lugar extends StatelessWidget {
     );
     final estrella_mitad = Container (
         margin: EdgeInsets.only(
-            top: 53.0,
+            top: 123.0,
             right: 3.0
         ),
         child: Icon(
