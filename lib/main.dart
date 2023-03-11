@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
                     reviews_info("assets/img/beach_palm.jpeg", "otro", "1 review · 5 photos", "Que bonito"),
                   ],
                 ),
-                GradientBack(),
+                Encabezado(),
               ],
             )
 
