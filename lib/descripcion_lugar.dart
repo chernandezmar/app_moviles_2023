@@ -5,12 +5,13 @@ class Descripcion_lugar extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     String texto ="Lorem ipsum dolor sit amet. Eum tempore culpa aut unde iure aut veritatis quis a illum impedit ut omnis voluptas! Ut saepe voluptatem vel molestias nisi ut rerum odio ut veniam porro At blanditiis molestiae! Qui quos iure sit consectetur doloribus et iure corrupti qui incidunt tempore. Aut facere nesciunt sit cupiditate vero et molestiae dolorum. Aut excepturi autem aut quidem necessitatibus in dolor vero At minus officia sed perferendis minima ea fugit optio.";
+    var valortop=350.0;
     //final margen_top = 350;
 
 
     final estrella = Container (
       margin: EdgeInsets.only(
-        top: 350,
+        top: valortop,
         right: 3.0
       ),
       child: Icon(
@@ -20,7 +21,7 @@ class Descripcion_lugar extends StatelessWidget {
     );
     final estrella_mitad = Container (
         margin: EdgeInsets.only(
-            top: 350.0,
+            top: valortop,
             right: 3.0
         ),
         child: Icon(
@@ -33,7 +34,7 @@ class Descripcion_lugar extends StatelessWidget {
       children: [
         Container (
           margin: EdgeInsets.only(
-            top: 350.0,
+            top: valortop,
             left:20.0,
             right:20.0
           ),
