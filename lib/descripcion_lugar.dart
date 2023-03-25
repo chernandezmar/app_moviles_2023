@@ -60,7 +60,7 @@ class Descripcion_lugar extends StatelessWidget {
     );
 
     final descripcion = Container(
-      margin: new EdgeInsets.only(
+      margin: EdgeInsets.only(
         top: 20.0,
         left:20.0,
         right:20.0

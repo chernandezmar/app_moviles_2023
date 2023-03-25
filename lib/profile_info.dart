@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'gradiente_fondo.dart';
 
 class profile_info extends StatelessWidget {
   @override
@@ -11,7 +12,7 @@ class profile_info extends StatelessWidget {
       width: 90,
       padding: EdgeInsets.all(3.0), // ajusta el tamaño del margen
       decoration: BoxDecoration(
-        color: Colors.black12, // establece el color del margen
+        color: Colors.white60,
         shape: BoxShape.circle,// redondea los bordes del margen
 
       ),
@@ -34,6 +35,7 @@ class profile_info extends StatelessWidget {
           style: TextStyle(
             fontFamily: "Righteotus",
             fontSize: 30,
+            color: Colors.white,
           )
       ),
     );
@@ -44,7 +46,8 @@ class profile_info extends StatelessWidget {
           textAlign: TextAlign.left,
           style: TextStyle(
             fontFamily: "Lato",
-            fontSize: 10,
+            fontSize: 14,
+            color: Colors.white,
           )
       ),
     );
@@ -64,10 +67,7 @@ class profile_info extends StatelessWidget {
       ),
     );
 
-
-
-
-    return Container(
+    final informacion_basica_usuario = Container(
       margin:EdgeInsets.only(
         top:100,
         left:50,
@@ -78,6 +78,108 @@ class profile_info extends StatelessWidget {
           info_user
         ],
       ),
+    );
+
+    //Aqui definimos los botones de navegacion
+    final favoritos = Container(
+      width: 30,
+      height: 30,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        shape: BoxShape.circle,// redondea los bordes del margen
+
+      ),
+      child: const Icon(
+        Icons.bookmark_add_outlined,
+        color: Color(0xDA370F65),
+        size: 18,
+      ),
+    );
+    final regalo = Container(
+          width: 30,
+          height: 30,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            shape: BoxShape.circle,// redondea los bordes del margen
+
+          ),
+          child: const Icon(
+            Icons.badge_outlined,
+            color: Color(0xDA370F65),
+            size: 18,
+          ),
+        );
+    final agregar = Container(
+      width: 50,
+      height: 50,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        shape: BoxShape.circle,// redondea los bordes del margen
+
+      ),
+      child: const Icon(
+        Icons.add,
+        color: Color(0xDA370F65),
+        size: 40,
+      ),
+    );
+    final email = Container(
+      width: 30,
+      height: 30,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        shape: BoxShape.circle,// redondea los bordes del margen
+
+      ),
+      child: const Icon(
+        Icons.email_outlined,
+        color: Color(0xDA370F65),
+        size: 18,
+      ),
+    );
+    final profile = Container(
+      width: 30,
+      height: 30,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        shape: BoxShape.circle,// redondea los bordes del margen
+
+      ),
+      child: const Icon(
+        Icons.person,
+        color: Color(0xDA370F65),
+        size: 18,
+      ),
+    );
+    final botones_navegacion = Container(
+      margin: EdgeInsets.only(
+        top:10,
+
+      ),
+      child:  Row(
+        children: [
+          Expanded(child: favoritos),
+          Expanded(child: regalo),
+          Expanded(child: agregar),
+          Expanded(child: email),
+          Expanded(child: profile),
+        ],
+      ),
+    );
+
+
+    final encabezado_profile = Column(
+      children: [
+            informacion_basica_usuario,
+            botones_navegacion,
+          ],
+    );
+
+    return Stack(
+      children: [
+        GradientBack("Profile", 350),
+        encabezado_profile
+      ],
     );
 
   }

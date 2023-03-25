@@ -11,7 +11,7 @@ class Encabezado extends StatelessWidget {
     // TODO: implement build
     return Stack(
       children: [
-        GradientBack(),
+        GradientBack("Popular",250),
         lista_lugares()
       ],
     );
