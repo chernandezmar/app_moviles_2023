@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'descripcion_lugar.dart';
-import 'lista_reviewers.dart';
-import 'encabezado_appbar.dart';
+import 'main_section.dart';
+import 'profile_info.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -12,21 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        /*appBar: AppBar(
-          title: Text('Esta es la AppBar aqui'),
-        ),*/
-        body:
-            Stack (
-              children: [
-                ListView(
-                  children: [
-                    Descripcion_lugar(),
-                    lista_reviewers()
-                  ],
-                ),
-                Encabezado(),
-              ],
-            )
+        body: profile_info()
+        //Esta es la seccion que habiamos trabajado, esta en main_section.dart
+        //muestra_main()
 
       ),
     );

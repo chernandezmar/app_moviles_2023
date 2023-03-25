@@ -13,6 +13,7 @@ class lista_lugares extends StatelessWidget {
           padding: EdgeInsets.all(20.0),
           scrollDirection: Axis.horizontal,
           children: [
+            tarjeta_Lugar("assets/img/river.jpeg"),
             tarjeta_Lugar("assets/img/beach.jpeg"),
             tarjeta_Lugar("assets/img/beach_palm.jpeg"),
             tarjeta_Lugar("assets/img/mountain.jpeg"),
