@@ -106,7 +106,7 @@ class profile_info extends StatelessWidget {
 
     final paisaje_list=Container(
       margin: EdgeInsets.only(
-          top: 190
+          top: 180,
       ),
       child: ListView(
         children: [
@@ -123,7 +123,7 @@ class profile_info extends StatelessWidget {
       children: [
         GradientBack("Profile", 320),
         paisaje_list,
-        GradientBack("Profile", 210),
+        //GradientBack("Profile", 210),
         encabezado_profile,
       ],
     );
