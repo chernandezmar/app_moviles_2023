@@ -25,7 +25,11 @@ class MyHomePage extends StatelessWidget {
         title: Text('Mi aplicación'),
       ),
       body: Center(
-        child: Botones(),
+        child: Container(
+          height: 800,
+          color: Colors.red,
+          child: Botones(),
+        )
       ),
     );
   }
@@ -46,12 +50,15 @@ class Botones extends StatelessWidget {
             );
           },
           child: Container(
+            margin: EdgeInsets.only(
+              right: 20,
+            ),
             child: Icon(Icons.home),
             decoration: BoxDecoration(
               color: Colors.grey[200],
               borderRadius: BorderRadius.circular(8.0),
             ),
-            padding: EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(28.0),
           ),
         ),
         GestureDetector(
@@ -115,7 +122,9 @@ class InicioScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Inicio'),
       ),
-      body: Center(
+      body: Container(
+        height: 800,
+        color: Colors.purple,
         child: Botones(),
       ),
     );
@@ -129,7 +138,9 @@ class ProfileScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Perfil'),
       ),
-      body: Center(
+      body: Container(
+        height: 800,
+        color: Colors.blueGrey,
         child: Botones(),
       ),
     );
@@ -143,9 +154,11 @@ class FavoritosScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Favoritos'),
       ),
-      body: Center(
+      body: Container(
+        height: 800,
+        color: Colors.lightGreen,
         child: Botones(),
-      ),
+      )
     );
   }
 }
