@@ -11,8 +11,8 @@ class PaisajeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     //Paisaje fotos
     final paisaje_foto=Container(
-        width:370,
-        height: 200,
+        width:470,
+        height: 300,
         padding: const EdgeInsets.all(5.0),
         margin: const EdgeInsets.only(
             top: 12
@@ -55,7 +55,7 @@ class PaisajeCard extends StatelessWidget {
           textAlign: TextAlign.left,
           style: const TextStyle(
             fontFamily: "Lato",
-            fontSize: 10,
+            fontSize: 9,
             color: Colors.black45,
           )
       ),
@@ -94,7 +94,7 @@ class PaisajeCard extends StatelessWidget {
 
     final paisaje_info=Container(
       width: 270,
-      height: 90,
+      //height: 110,
       margin: const EdgeInsets.only(
           top: 160
       ),

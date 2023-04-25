@@ -37,7 +37,7 @@ class profile_info extends StatelessWidget {
           textAlign: TextAlign.left,
           style: TextStyle(
             fontFamily: "Righteotus",
-            fontSize: 30,
+            fontSize: 20,
             color: Colors.white,
           )
       ),
@@ -57,7 +57,7 @@ class profile_info extends StatelessWidget {
 
     final info_user = Container(
       height: 60,
-      width: 190,
+      //width: 290,
       margin: const EdgeInsets.only(
         left: 20,
       ),
